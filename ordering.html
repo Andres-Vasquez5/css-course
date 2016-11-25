@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+    <style>
+      .parent{
+        display: flex;
+        background: #ccc;
+        padding: 10px;
+        font-family: Helvetica;
+      }
+      .child{
+        padding: 10px;
+        margin: 10px;
+        background: #fff;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        flex-grow: 1;
+      }
+      /*par ordenar se tiene que definir el orden de todos los bloques, no solo de uno*/
+      .child:nth-child(1){
+        order:2
+      }
+      .child:nth-child(2){
+        order:3
+      }
+      .child:nth-child(3){
+        order:1
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        1
+      </div>
+      <div class="child">
+        2
+      </div>
+      <div class="child">
+        3
+      </div>
+    </div>
+  </body>
+</html>

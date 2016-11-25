@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FlexBox Direction</title>
+    <style media="screen">
+      .parent{
+        display: flex
+        /*flex-direction:row-reverse;*/
+        /*flex-direction: column;*/
+        flex-direction: column-reverse;
+        background: #ccc;
+        padding: 10px;
+      }
+      .child{
+        padding: 10px;
+        margin: 10px;
+        background: #fff;
+        flex-grow: 1;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+    </div>
+  </body>
+</html>
